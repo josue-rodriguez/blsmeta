@@ -71,19 +71,18 @@
 #'
 #' @usage data(dat_wibbelink2017)
 #'
-#' @format A dataset with 100 rows and 10 variables.
-#' \describe{
-#'    \item{study_id}{unique id for each study}
-#'    \item{es_id}{unique id for each effect size}
-#'    \item{yi}{observed effect sizes(Cohen's \emph{d})}
-#'    \item{vi}{sampling variance (SE^2)}
-#'    \item{pstatpub}{dummy variable encoding whether the study was published, \code{0 = unpublished, 1 = published}}
-#'    \item{pstatnotpub}{dummy variable encoding whether the study was unpublished, \code{0 = published, 1 = unpublished}}
-#'    \item{typgen}{dummy variable encoding the type of recidivism behavior \code{0 = not applicable, 1 = general}}
-#'    \item{typovert}{dummy variable encoding the type of recidivism behavior \code{0 = not applicable, 1 = overt}}
-#'    \item{typcovert}{dummy variable encoding the type of recidivism behavior \code{0 = not applicable, 1 = covert}}
-#'    \item{pyear}{the publication year of the study; mean-centered}
-#'    }
+#' @format A data frame with 100 rows and 10 variables.
+#' * \code{study_id}: unique id for each study
+#' * \code{es_id}: unique id for each effect size
+#' * \code{yi}: observed effect sizes (Cohen's d)
+#' * \code{vi}: sampling variance (SE^2)
+#' * \code{pstatpub}: dummy variable encoding whether the study was published, 0 = unpublished, 1 = published
+#' * \code{pstatnotpub}: dummy variable encoding whether the study was unpublished, 0 = published, 1 = unpublished
+#' * \code{typgen}: dummy variable encoding the type of recidivism behavior 0 = not applicable, 1 = general
+#' * \code{typovert}: dummy variable encoding the type of recidivism behavior 0 = not applicable, 1 = overt
+#' * \code{typcovert}: dummy variable encoding the type of recidivism behavior 0 = not applicable, 1 = covert
+#' * \code{pyear}: the publication year of the study; mean-centered
+#' @md
 #'
 #' @references Wibbelink et al. (2017). A meta-analysis of the association between mental health disorders and juvenile recidivism.
 #' \emph{Aggression and Violent Behavior}, \emph{33}, 78-90.
@@ -101,26 +100,25 @@
 #' the overall replicability of theoretically-important phenomenon
 #' and examing the methodological, situational, cultural, and developmental moderators on infant's
 #' preference for infant-directed speech (IDS) over adult-directed speech (ADS)
+#' \insertNoCite{manybabies2020quantifying}{blsmeta}
 #'
 #' @docType data
 #'
 #' @usage data(dat_manybabies2020)
 #'
 #' @format A dataset with 108 rows and 8 variables.
-#' \describe{
-#'    \item{lab}{name of the lab which observed the effect}
-#'    \item{es_id}{unique id for each effect size}
-#'    \item{yi}{observed effect sizes, expressed as Cohen's \emph{d} }
-#'    \item{vi}{sampling variance (SE^2)}
-#'    \item{ni}{sample size for each observed effect}
-#'    \item{age_group}{age category for each observed effect}
-#'    \item{method}{method used for each observed effect}
-#'    \item{nae}{whether North American English stimuli were used }
-#'    \item{age_mo}{mean age of babies (in months) for each observed effect}
-#'    \item{age_mo_centered}{mean-centered age of babies (in months) for each observed effect}
-#'    }
+#'  * \code{lab}: name of the lab which observed the effect
+#'  * \code{es_id}: unique id for each effect size
+#'  * \code{yi}: observed effect sizes, expressed as Cohen's d
+#'  * \code{vi}: sampling variance (SE^2)
+#'  * \code{ni}: sample size for each observed effect
+#'  * \code{age_group}: age category for each observed effect
+#'  * \code{method}: method used for each observed effect
+#'  * \code{nae}: whether North American English stimuli were used 
+#'  * \code{age_mo}: mean age of babies (in months) for each observed effect
+#'  * \code{age_mo_centered}: mean-centered age of babies (in months) for each observed effect
+#' @md
 #'
-#' \insertNoCite{manybabies2020quantifying}{blsmeta}
 #'
 #' @references 
 #' \insertAllCited{}
@@ -146,25 +144,25 @@
 #' @usage data(dat_manylabs2018)
 #'
 #' @format A dataset with 1,414 rows and 23 variables.
-#' \describe{
-#'    \item{lab}{The lab which conducted the replication}
-#'    \item{es_id}{Unique id for each effect size}
-#'    \item{yi_r}{A numeric indicating  the observed effect size, expressed in \emph{r}}
-#'    \item{vi_r}{A numeric indicating the variance on the observed effect size, expressed in \emph{r}}
-#'    \item{yi_d}{A numeric indicating the observed effect size, expressed in Cohen's \emph{d}}
-#'    \item{vi_d}{A numeric indicating the variance on the observed effect size, expressed in Cohen's \emph{d}}
-#'    \item{ni}{A numeric indicating the total sample size for the observed effect size}
-#'    \item{country}{Country where the sample was collected}
-#'    \item{weird}{Dummy variable encoding whether a country was classified as WEIRD, \code{0 = non-WEIRD, 1 = WEIRD}}
-#'    \item{western}{Dummy variable encoding a team judgment whether country was considered "western"}
-#'    \item{educated}{Education score as measured by the Education Index}
-#'    \item{industrialized}{Industrialization score as measured in the 2016 Industrial Development Report}
-#'    \item{rich}{Dummy variable encoding whether a country is developed according to the 2014 World Economic Situation and Prospects Report, \code{0 = emerging or in transition, 1 = developed}}
-#'    \item{democratic}{The quality democracy in the corresponding country according to the 2015 Democracy Ranking Report. Higher scores indicate higher quality.}
-#'    \item{mean_weird_score}{The arithmetic mean of the \code{weird}, \code{western}, \code{educated}, \code{industrialized}, and \code{rich} variables}
-#'    \item{online}{Whether the study was replicated in a lab or online}
-#'    \item{analysis}{Unique id for replicated study}
-#'    }
+#' * \code{lab}: The lab which conducted the replication
+#' * \code{es_id}: Unique id for each effect size
+#' * \code{yi_r}: A numeric indicating  the observed effect size, expressed in r
+#' * \code{vi_r}: A numeric indicating the variance on the observed effect size, expressed in r
+#' * \code{yi_d}: A numeric indicating the observed effect size, expressed in Cohen's d
+#' * \code{vi_d}: A numeric indicating the variance on the observed effect size, expressed in Cohen's d
+#' * \code{ni}: A numeric indicating the total sample size for the observed effect size
+#' * \code{country}: Country where the sample was collected
+#' * \code{weird}: Dummy variable encoding whether a country was classified as WEIRD; 0 = non-WEIRD, 1 = WEIRD
+#' * \code{western}: Dummy variable encoding a team judgment whether country was considered "western"
+#' * \code{educated}: Education score as measured by the Education Index
+#' * \code{industrialized}: Industrialization score as measured in the 2016 Industrial Development Report
+#' * \code{rich}: Dummy variable encoding whether a country is developed according to the 2014 World Economic Situation and Prospects Report; 0 = emerging or in transition, 1 = developed
+#' * \code{democratic}: The quality democracy in the corresponding country according to the 2015 Democracy Ranking Report. Higher scores indicate higher quality.
+#' * \code{mean_weird_score}: The arithmetic mean of the \code{weird}, \code{western}, \code{educated}, \code{industrialized}, and \code{rich} variables
+#' * \code{online}: Whether the study was replicated in a lab or online
+#' * \code{analysis}: Unique id for replicated study
+#' @md
+#' 
 #' @keywords datasets
 #'
 #' @references Klein, R. A., et al. (2018). Many Labs 2: Investigating variation in replicability across samples and settings.
@@ -191,23 +189,22 @@
 #' @usage data(dat_denizAksayli2019)
 #'
 #' @format A dataset with 637 rows and 39 variables.
-#' \describe{
-#'    \item{study_id}{}
-#'    \item{es_id}{}
-#'    \item{yi}{Effect size in Hedge's g}
-#'    \item{vi}{Variance (SE^2)}
-#'    \item{ni}{Sample size}
-#'    \item{author}{}
-#'    \item{transfer}{Transfer type: near or far}
-#'    \item{test}{Type of working memory test?}
-#'    \item{allocation}{Whether participants were randomly assigned}
-#'    \item{comparison}{Active or non-active: whether the CWMT groups was compared to another cogntively demannding activity}
-#'    \item{baseline}{Standardized mean diference corrected for upward bias between exp. and control at pre-test assesment}
-#'    \item{age_group}{Whether particpants were children (< 16 yrs), adults (17-55), or older adults (> 55)}
-#'    \item{age_mean_exp}{}
-#'    \item{age_mean_control}{}
-#'    \item{population}{Whether the participants were typical subjects not suffering from any clinical conditions}
-#'    }
+#' * \code{study_id}: 
+#' * \code{es_id}: 
+#' * \code{yi}: Effect size in Hedge's g
+#' * \code{vi}: Variance (SE^2)
+#' * \code{ni}: Sample size
+#' * \code{author}: 
+#' * \code{transfer}: Transfer type: near or far
+#' * \code{test}: Type of working memory test?
+#' * \code{allocation}: Whether participants were randomly assigned
+#' * \code{comparison}: Active or non-active: whether the CWMT groups was compared to another cognitively demannding activity
+#' * \code{baseline}: Standardized mean difference corrected for upward bias between exp. and control at pre-test assessment
+#' * \code{age_group}: Whether participants were children (< 16 yrs), adults (17-55), or older adults (> 55)
+#' * \code{age_mean_exp}: 
+#' * \code{age_mean_control}{}
+#' * \code{population}: Whether the participants were typical subjects not suffering from any clinical conditions
+#' @md
 #'
 #' @keywords datasets
 #'
@@ -233,21 +230,19 @@
 #' @usage data(dat_sala2019)
 #'
 #' @format A dataset with 1,555 rows and 15 variables.
-#' \describe{
-#'    \item{id}{A numeric containing a unique id for each observed effect}
-#'    \item{study_id}{A numeric containing a unique id for each meta-analysis}
-#'    \item{study_name}{A character indicating the author, year, and comparison number (if applicable) of the meta-analysis}
-#'    \item{n}{A numeric containing the total sample size for the observed effect size in the meta-analysis}
-#'    \item{g}{A numeric containing the observed effect size, expressed in Hedge's \emph{g}}
-#'    \item{se}{A numeric containing the standard error of the observed effect size}
-#'    \item{var}{A numeric containing the variance of the observed effect size}
-#'    \item{r}{A numeric containing the observed effect size, observed as \emph{r}}
-#'    \item{comparison}{}
-#'    \item{age}{}
-#'    \item{type}{}
-#'    \item{test}{}
-#'    \item{model}{}
-#'    }
+#' * \code{id}: A numeric containing a unique id for each observed effect
+#' * \code{study_id}: A numeric containing a unique id for each meta-analysis
+#' * \code{study_name}: A character indicating the author, year, and comparison number (if applicable) of the meta-analysis
+#' * \code{n}: A numeric containing the total sample size for the observed effect size in the meta-analysis
+#' * \code{g}: A numeric containing the observed effect size, expressed in Hedge's g
+#' * \code{se}: A numeric containing the standard error of the observed effect size
+#' * \code{var}: A numeric containing the variance of the observed effect size
+#' * \code{r}: A numeric containing the observed effect size, observed as r
+#' * \code{comparison}: 
+#' * \code{age}: 
+#' * \code{type}: 
+#' * \code{test}: 
+#' * \code{model}: 
 #'
 #' @keywords datasets
 #'
@@ -286,6 +281,7 @@
 #'    \item{proc_aware}{Whether participants were aware of the facial feedback manipulation}
 #'    \item{w_v_b}{Whether the study used a between- or within-subjects design}
 #'    }
+#' @md
 #'    
 #' @keywords datasets
 #'
@@ -313,40 +309,25 @@
 #'
 #' @format A dataset with 2443 rows and 23 variables.
 #'
-#' \describe{
-#'    \item{study_id}{Unique id for study}
-#'    \item{effect_id}{Unique id for effect size}
-#'    \item{authors}{A factor encoding an identifier for the primary study within a meta-analysis based on
-#'                             the first author of the study or the sample used}
-#'    \item{year}{A numeric indicating the year in which the primary study was reported}
-#'    \item{yi}{A numeric indicating the original effect size converted to a Fishers z value}
-#'    \item{vi}{A numeric indicating the variance around the z value in \code{yi}}
-#'    \item{ni}{A numeric indicating the total sample size of the primary study}
-#'    \item{es}{A numeric of the effect size as indicated in \code{type_es}}
-#'    \item{se}{A numeric of the standard errors of the effect size}
-#'    \item{type_es}{A factor indicating the type of effect size extracted from the meta-analysis.
-#'                         \itemize{
-#'                             \item{1 = r transformed to Fishers z}
-#'                             \item{2 = Hedge's g}
-#'                             \item{3 = log odds ratio}
-#'                             \item{4 = Cohen's d}
-#'                             \item{5 = Hazard Ratio}
-#'                             \item{6, 7, 8 = other}
-#'                             }}
-#'    \item{type}{A factor indicating why type of IQ research was summarized by the meta-analysis.
-#'                   \itemize{
-#'                     \item{1 = Correlational}
-#'                     \item{2 = Group_differences}
-#'                     \item{3 = Experiments/Interventions}
-#'                     \item{4 = Toxicology}
-#'                     \item{5 = (Behavior) Genetics}
-#'                   }}    
-#'    \item{citations}{A numeric indicating number of times the primary study was cited}
-#'    \item{countrycode}{A factor the country in which the first author of a primary study was situated at the time of publication}
-#'    \item{jrnl_impact}{A numeric indicating the impact factor in 2014 of the journal where the primary study was published}
-#'    \item{similarity}{A factor indicating whether the primary study matched the research question of the meta-analysis
-#'        \itemize{\item{0 = dissimilar} \item{1 = similar}}}
-#'    }
+#' * \code{study_id}: Unique id for study
+#' * \code{effect_id}: Unique id for effect size
+#' * \code{authors}: A factor encoding an identifier for the primary study within a meta-analysis based o
+#'                             the first author of the study or the sample used
+#' * \code{year}: A numeric indicating the year in which the primary study was reported
+#' * \code{yi}: A numeric indicating the original effect size converted to a Fishers z value
+#' * \code{vi}: A numeric indicating the variance around the z value in \code{yi}
+#' * \code{ni}: A numeric indicating the total sample size of the primary study
+#' * \code{es}: A numeric of the effect size as indicated in \code{type_es}
+#' * \code{se}: A numeric of the standard errors of the effect size
+#' * \code{type_es}: A factor indicating the type of effect size extracted from the meta-analysis; 1 = r transformed to Fishers z, 2 = Hedge's g, 3 = log odds ratio
+#'                   4 = Cohen's d, 5 = Hazard Ratio, 6, 7, 8 = other
+#' * \code{type}: A factor indicating why type of IQ research was summarized by the meta-analysis; 1 = Correlational, 2 = Group_differences
+#'                3 = Experiments/Interventions, 4 = Toxicology, 5 = (Behavior) Genetics
+#' * \code{citations}: A numeric indicating number of times the primary study was cited
+#' * \code{countrycode}: A factor the country in which the first author of a primary study was situated at the time of publication
+#' * \code{jrnl_impact}: A numeric indicating the impact factor in 2014 of the journal where the primary study was published
+#' * \code{similarity}: A factor indicating whether the primary study matched the research question of the meta-analysis; 0 = dissimilar, 1 = similar
+#' @md
 #'
 #' @keywords datasets
 #'
@@ -375,28 +356,26 @@
 #'
 #' @format 
 #'
-#' \describe{
-#'    \item{study_id}{Unique id for study}
-#'    \item{samp_id}{Unique id for each sample}
-#'    \item{es_id}{Unique id for effect size}
-#'    \item{authors}{Authors of study}
-#'    \item{yi}{Effect size in r}
-#'    \item{vi}{Variance of effect size}
-#'    \item{ni}{Sample size of study}
-#'    \item{sex}{Proportion of study that was female}
-#'    \item{age}{Mean age of participants}
-#'    \item{dep_status}{Clinical status of depression}
-#'    \item{comorbid_anx}{Whehter comorbid with anxiety}
-#'    \item{emo_val}{Emotional valence of simulations}
-#'    \item{macro_micro}{Macro vs. micro specificity}
-#'    \item{cue_type}{Cue type}
-#'    \item{spec_rated}{Self- vs. researcher-rated specificity}
-#'    \item{dep_rated}{Self- vs. researcher-rated depression}
-#'    \item{cat_dim}{Categorical vs. dimensional designs}
-#'    \item{quality}{Study quality rating}
-#'    \item{published}{Published or not}
-#'    \item{mode}{Mode or prospection}
-#'    }
+#' * \code{study_id}: Unique id for study
+#' * \code{samp_id}: Unique id for each sample
+#' * \code{es_id}: Unique id for effect size
+#' * \code{authors}: Authors of study
+#' * \code{yi}: Effect size in r
+#' * \code{vi}: Variance of effect size
+#' * \code{ni}: Sample size of study
+#' * \code{sex}: Proportion of study that was female
+#' * \code{age}: Mean age of participants
+#' * \code{dep_status}: Clinical status of depression
+#' * \code{comorbid_anx}: Whehter comorbid with anxiety
+#' * \code{emo_val}: Emotional valence of simulations
+#' * \code{macro_micro}: Macro vs. micro specificity
+#' * \code{cue_type}: Cue type
+#' * \code{spec_rated}: Self- vs. researcher-rated specificity
+#' * \code{dep_rated}: Self- vs. researcher-rated depression
+#' * \code{cat_dim}: Categorical vs. dimensional designs
+#' * \code{quality}: Study quality rating
+#' * \code{published}: Published or not
+#' * \code{mode}: Mode or prospection
 #'
 #'
 #' @keywords datasets

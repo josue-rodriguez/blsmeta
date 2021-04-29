@@ -6,24 +6,24 @@
 \title{Studies from the Many Labs 2 project.}
 \format{
 A dataset with 1,414 rows and 23 variables.
-\describe{
-\item{lab}{The lab which conducted the replication}
-\item{es_id}{Unique id for each effect size}
-\item{yi_r}{A numeric indicating  the observed effect size, expressed in \emph{r}}
-\item{vi_r}{A numeric indicating the variance on the observed effect size, expressed in \emph{r}}
-\item{yi_d}{A numeric indicating the observed effect size, expressed in Cohen's \emph{d}}
-\item{vi_d}{A numeric indicating the variance on the observed effect size, expressed in Cohen's \emph{d}}
-\item{ni}{A numeric indicating the total sample size for the observed effect size}
-\item{country}{Country where the sample was collected}
-\item{weird}{Dummy variable encoding whether a country was classified as WEIRD, \code{0 = non-WEIRD, 1 = WEIRD}}
-\item{western}{Dummy variable encoding a team judgment whether country was considered "western"}
-\item{educated}{Education score as measured by the Education Index}
-\item{industrialized}{Industrialization score as measured in the 2016 Industrial Development Report}
-\item{rich}{Dummy variable encoding whether a country is developed according to the 2014 World Economic Situation and Prospects Report, \code{0 = emerging or in transition, 1 = developed}}
-\item{democratic}{The quality democracy in the corresponding country according to the 2015 Democracy Ranking Report. Higher scores indicate higher quality.}
-\item{mean_weird_score}{The arithmetic mean of the \code{weird}, \code{western}, \code{educated}, \code{industrialized}, and \code{rich} variables}
-\item{online}{Whether the study was replicated in a lab or online}
-\item{analysis}{Unique id for replicated study}
+\itemize{
+\item \code{lab}: The lab which conducted the replication
+\item \code{es_id}: Unique id for each effect size
+\item \code{yi_r}: A numeric indicating  the observed effect size, expressed in r
+\item \code{vi_r}: A numeric indicating the variance on the observed effect size, expressed in r
+\item \code{yi_d}: A numeric indicating the observed effect size, expressed in Cohen's d
+\item \code{vi_d}: A numeric indicating the variance on the observed effect size, expressed in Cohen's d
+\item \code{ni}: A numeric indicating the total sample size for the observed effect size
+\item \code{country}: Country where the sample was collected
+\item \code{weird}: Dummy variable encoding whether a country was classified as WEIRD; 0 = non-WEIRD, 1 = WEIRD
+\item \code{western}: Dummy variable encoding a team judgment whether country was considered "western"
+\item \code{educated}: Education score as measured by the Education Index
+\item \code{industrialized}: Industrialization score as measured in the 2016 Industrial Development Report
+\item \code{rich}: Dummy variable encoding whether a country is developed according to the 2014 World Economic Situation and Prospects Report; 0 = emerging or in transition, 1 = developed
+\item \code{democratic}: The quality democracy in the corresponding country according to the 2015 Democracy Ranking Report. Higher scores indicate higher quality.
+\item \code{mean_weird_score}: The arithmetic mean of the \code{weird}, \code{western}, \code{educated}, \code{industrialized}, and \code{rich} variables
+\item \code{online}: Whether the study was replicated in a lab or online
+\item \code{analysis}: Unique id for replicated study
 }
 }
 \source{

@@ -5,18 +5,18 @@
 \alias{dat_wibbelink2017}
 \title{Studies on juvenile recidivism}
 \format{
-A dataset with 100 rows and 10 variables.
-\describe{
-\item{study_id}{unique id for each study}
-\item{es_id}{unique id for each effect size}
-\item{yi}{observed effect sizes(Cohen's \emph{d})}
-\item{vi}{sampling variance (SE^2)}
-\item{pstatpub}{dummy variable encoding whether the study was published, \code{0 = unpublished, 1 = published}}
-\item{pstatnotpub}{dummy variable encoding whether the study was unpublished, \code{0 = published, 1 = unpublished}}
-\item{typgen}{dummy variable encoding the type of recidivism behavior \code{0 = not applicable, 1 = general}}
-\item{typovert}{dummy variable encoding the type of recidivism behavior \code{0 = not applicable, 1 = overt}}
-\item{typcovert}{dummy variable encoding the type of recidivism behavior \code{0 = not applicable, 1 = covert}}
-\item{pyear}{the publication year of the study; mean-centered}
+A data frame with 100 rows and 10 variables.
+\itemize{
+\item \code{study_id}: unique id for each study
+\item \code{es_id}: unique id for each effect size
+\item \code{yi}: observed effect sizes (Cohen's d)
+\item \code{vi}: sampling variance (SE^2)
+\item \code{pstatpub}: dummy variable encoding whether the study was published, 0 = unpublished, 1 = published
+\item \code{pstatnotpub}: dummy variable encoding whether the study was unpublished, 0 = published, 1 = unpublished
+\item \code{typgen}: dummy variable encoding the type of recidivism behavior 0 = not applicable, 1 = general
+\item \code{typovert}: dummy variable encoding the type of recidivism behavior 0 = not applicable, 1 = overt
+\item \code{typcovert}: dummy variable encoding the type of recidivism behavior 0 = not applicable, 1 = covert
+\item \code{pyear}: the publication year of the study; mean-centered
 }
 }
 \source{

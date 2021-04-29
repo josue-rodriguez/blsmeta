@@ -6,22 +6,22 @@
 \title{Studies on the cognitive and academic benefits of Cogmed}
 \format{
 A dataset with 637 rows and 39 variables.
-\describe{
-\item{study_id}{}
-\item{es_id}{}
-\item{yi}{Effect size in Hedge's g}
-\item{vi}{Variance (SE^2)}
-\item{ni}{Sample size}
-\item{author}{}
-\item{transfer}{Transfer type: near or far}
-\item{test}{Type of working memory test?}
-\item{allocation}{Whether participants were randomly assigned}
-\item{comparison}{Active or non-active: whether the CWMT groups was compared to another cogntively demannding activity}
-\item{baseline}{Standardized mean diference corrected for upward bias between exp. and control at pre-test assesment}
-\item{age_group}{Whether particpants were children (< 16 yrs), adults (17-55), or older adults (> 55)}
-\item{age_mean_exp}{}
-\item{age_mean_control}{}
-\item{population}{Whether the participants were typical subjects not suffering from any clinical conditions}
+\itemize{
+\item \code{study_id}:
+\item \code{es_id}:
+\item \code{yi}: Effect size in Hedge's g
+\item \code{vi}: Variance (SE^2)
+\item \code{ni}: Sample size
+\item \code{author}:
+\item \code{transfer}: Transfer type: near or far
+\item \code{test}: Type of working memory test?
+\item \code{allocation}: Whether participants were randomly assigned
+\item \code{comparison}: Active or non-active: whether the CWMT groups was compared to another cognitively demannding activity
+\item \code{baseline}: Standardized mean difference corrected for upward bias between exp. and control at pre-test assessment
+\item \code{age_group}: Whether participants were children (< 16 yrs), adults (17-55), or older adults (> 55)
+\item \code{age_mean_exp}:
+\item \code{age_mean_control}{}
+\item \code{population}: Whether the participants were typical subjects not suffering from any clinical conditions
 }
 }
 \source{

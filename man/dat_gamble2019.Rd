@@ -5,27 +5,27 @@
 \alias{dat_gamble2019}
 \title{Meta-analytic data collected from}
 \format{
-\describe{
-\item{study_id}{Unique id for study}
-\item{samp_id}{Unique id for each sample}
-\item{es_id}{Unique id for effect size}
-\item{authors}{Authors of study}
-\item{yi}{Effect size in r}
-\item{vi}{Variance of effect size}
-\item{ni}{Sample size of study}
-\item{sex}{Proportion of study that was female}
-\item{age}{Mean age of participants}
-\item{dep_status}{Clinical status of depression}
-\item{comorbid_anx}{Whehter comorbid with anxiety}
-\item{emo_val}{Emotional valence of simulations}
-\item{macro_micro}{Macro vs. micro specificity}
-\item{cue_type}{Cue type}
-\item{spec_rated}{Self- vs. researcher-rated specificity}
-\item{dep_rated}{Self- vs. researcher-rated depression}
-\item{cat_dim}{Categorical vs. dimensional designs}
-\item{quality}{Study quality rating}
-\item{published}{Published or not}
-\item{mode}{Mode or prospection}
+\itemize{
+\item \code{study_id}: Unique id for study
+\item \code{samp_id}: Unique id for each sample
+\item \code{es_id}: Unique id for effect size
+\item \code{authors}: Authors of study
+\item \code{yi}: Effect size in r
+\item \code{vi}: Variance of effect size
+\item \code{ni}: Sample size of study
+\item \code{sex}: Proportion of study that was female
+\item \code{age}: Mean age of participants
+\item \code{dep_status}: Clinical status of depression
+\item \code{comorbid_anx}: Whehter comorbid with anxiety
+\item \code{emo_val}: Emotional valence of simulations
+\item \code{macro_micro}: Macro vs. micro specificity
+\item \code{cue_type}: Cue type
+\item \code{spec_rated}: Self- vs. researcher-rated specificity
+\item \code{dep_rated}: Self- vs. researcher-rated depression
+\item \code{cat_dim}: Categorical vs. dimensional designs
+\item \code{quality}: Study quality rating
+\item \code{published}: Published or not
+\item \code{mode}: Mode or prospection
 }
 }
 \source{

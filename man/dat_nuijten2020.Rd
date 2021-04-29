@@ -6,40 +6,25 @@
 \title{Meta-analytic data collected from}
 \format{
 A dataset with 2443 rows and 23 variables.
-
-\describe{
-\item{study_id}{Unique id for study}
-\item{effect_id}{Unique id for effect size}
-\item{authors}{A factor encoding an identifier for the primary study within a meta-analysis based on
-the first author of the study or the sample used}
-\item{year}{A numeric indicating the year in which the primary study was reported}
-\item{yi}{A numeric indicating the original effect size converted to a Fishers z value}
-\item{vi}{A numeric indicating the variance around the z value in \code{yi}}
-\item{ni}{A numeric indicating the total sample size of the primary study}
-\item{es}{A numeric of the effect size as indicated in \code{type_es}}
-\item{se}{A numeric of the standard errors of the effect size}
-\item{type_es}{A factor indicating the type of effect size extracted from the meta-analysis.
 \itemize{
-\item{1 = r transformed to Fishers z}
-\item{2 = Hedge's g}
-\item{3 = log odds ratio}
-\item{4 = Cohen's d}
-\item{5 = Hazard Ratio}
-\item{6, 7, 8 = other}
-}}
-\item{type}{A factor indicating why type of IQ research was summarized by the meta-analysis.
-\itemize{
-\item{1 = Correlational}
-\item{2 = Group_differences}
-\item{3 = Experiments/Interventions}
-\item{4 = Toxicology}
-\item{5 = (Behavior) Genetics}
-}}
-\item{citations}{A numeric indicating number of times the primary study was cited}
-\item{countrycode}{A factor the country in which the first author of a primary study was situated at the time of publication}
-\item{jrnl_impact}{A numeric indicating the impact factor in 2014 of the journal where the primary study was published}
-\item{similarity}{A factor indicating whether the primary study matched the research question of the meta-analysis
-\itemize{\item{0 = dissimilar} \item{1 = similar}}}
+\item \code{study_id}: Unique id for study
+\item \code{effect_id}: Unique id for effect size
+\item \code{authors}: A factor encoding an identifier for the primary study within a meta-analysis based o
+the first author of the study or the sample used
+\item \code{year}: A numeric indicating the year in which the primary study was reported
+\item \code{yi}: A numeric indicating the original effect size converted to a Fishers z value
+\item \code{vi}: A numeric indicating the variance around the z value in \code{yi}
+\item \code{ni}: A numeric indicating the total sample size of the primary study
+\item \code{es}: A numeric of the effect size as indicated in \code{type_es}
+\item \code{se}: A numeric of the standard errors of the effect size
+\item \code{type_es}: A factor indicating the type of effect size extracted from the meta-analysis; 1 = r transformed to Fishers z, 2 = Hedge's g, 3 = log odds ratio
+4 = Cohen's d, 5 = Hazard Ratio, 6, 7, 8 = other
+\item \code{type}: A factor indicating why type of IQ research was summarized by the meta-analysis; 1 = Correlational, 2 = Group_differences
+3 = Experiments/Interventions, 4 = Toxicology, 5 = (Behavior) Genetics
+\item \code{citations}: A numeric indicating number of times the primary study was cited
+\item \code{countrycode}: A factor the country in which the first author of a primary study was situated at the time of publication
+\item \code{jrnl_impact}: A numeric indicating the impact factor in 2014 of the journal where the primary study was published
+\item \code{similarity}: A factor indicating whether the primary study matched the research question of the meta-analysis; 0 = dissimilar, 1 = similar
 }
 }
 \source{

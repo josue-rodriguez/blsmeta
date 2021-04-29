@@ -6,20 +6,18 @@
 \title{Studies from ManyBabies 1: Infant-Directed Speech Preference.}
 \format{
 A dataset with 108 rows and 8 variables.
-\describe{
-\item{lab}{name of the lab which observed the effect}
-\item{es_id}{unique id for each effect size}
-\item{yi}{observed effect sizes, expressed as Cohen's \emph{d} }
-\item{vi}{sampling variance (SE^2)}
-\item{ni}{sample size for each observed effect}
-\item{age_group}{age category for each observed effect}
-\item{method}{method used for each observed effect}
-\item{nae}{whether North American English stimuli were used }
-\item{age_mo}{mean age of babies (in months) for each observed effect}
-\item{age_mo_centered}{mean-centered age of babies (in months) for each observed effect}
+\itemize{
+\item \code{lab}: name of the lab which observed the effect
+\item \code{es_id}: unique id for each effect size
+\item \code{yi}: observed effect sizes, expressed as Cohen's d
+\item \code{vi}: sampling variance (SE^2)
+\item \code{ni}: sample size for each observed effect
+\item \code{age_group}: age category for each observed effect
+\item \code{method}: method used for each observed effect
+\item \code{nae}: whether North American English stimuli were used
+\item \code{age_mo}: mean age of babies (in months) for each observed effect
+\item \code{age_mo_centered}: mean-centered age of babies (in months) for each observed effect
 }
-
-\insertNoCite{manybabies2020quantifying}{blsmeta}
 }
 \source{
 \href{https://github.com/manybabies/mb1-analysis-public}{GitHub}
@@ -32,6 +30,7 @@ Meta-analytic data collected from the ManyBabies Consortium aimed at assessing
 the overall replicability of theoretically-important phenomenon
 and examing the methodological, situational, cultural, and developmental moderators on infant's
 preference for infant-directed speech (IDS) over adult-directed speech (ADS)
+\insertNoCite{manybabies2020quantifying}{blsmeta}
 }
 \references{
 \insertAllCited{}

@@ -6,20 +6,20 @@
 \title{Studies on the impact of working-memory training on near- and far-transfer measures}
 \format{
 A dataset with 1,555 rows and 15 variables.
-\describe{
-\item{id}{A numeric containing a unique id for each observed effect}
-\item{study_id}{A numeric containing a unique id for each meta-analysis}
-\item{study_name}{A character indicating the author, year, and comparison number (if applicable) of the meta-analysis}
-\item{n}{A numeric containing the total sample size for the observed effect size in the meta-analysis}
-\item{g}{A numeric containing the observed effect size, expressed in Hedge's \emph{g}}
-\item{se}{A numeric containing the standard error of the observed effect size}
-\item{var}{A numeric containing the variance of the observed effect size}
-\item{r}{A numeric containing the observed effect size, observed as \emph{r}}
-\item{comparison}{}
-\item{age}{}
-\item{type}{}
-\item{test}{}
-\item{model}{}
+\itemize{
+\item \code{id}: A numeric containing a unique id for each observed effect
+\item \code{study_id}: A numeric containing a unique id for each meta-analysis
+\item \code{study_name}: A character indicating the author, year, and comparison number (if applicable) of the meta-analysis
+\item \code{n}: A numeric containing the total sample size for the observed effect size in the meta-analysis
+\item \code{g}: A numeric containing the observed effect size, expressed in Hedge's g
+\item \code{se}: A numeric containing the standard error of the observed effect size
+\item \code{var}: A numeric containing the variance of the observed effect size
+\item \code{r}: A numeric containing the observed effect size, observed as r
+\item \code{comparison}:
+\item \code{age}:
+\item \code{type}:
+\item \code{test}:
+\item \code{model}:
 }
 }
 \source{
